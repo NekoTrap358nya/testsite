@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мій сайт</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #101827;
+            color: white;
+        }
+
+        header {
+            background: #1e293b;
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            color: #94a3b8;
+            margin-bottom: 30px;
+        }
+
+        button {
+            background: #0ea5e9;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #0284c7;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px 10%;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 12px;
+            width: 250px;
+            text-align: center;
+        }
+
+        .card h3 {
+            color: #38bdf8;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #64748b;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>MY WEBSITE</h2>
+
+        <nav>
+            <a href="#home">Головна</a>
+            <a href="#about">Про нас</a>
+            <a href="#contacts">Контакти</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Ласкаво просимо!</h1>
+
+        <p>Це мій перший сучасний HTML-сайт.</p>
+
+        <button onclick="showMessage()">
+            Натисни мене
+        </button>
+    </section>
+
+    <section class="cards" id="about">
+
+        <div class="card">
+            <h3>HTML</h3>
+            <p>Створення структури вебсторінок.</p>
+        </div>
+
+        <div class="card">
+            <h3>CSS</h3>
+            <p>Оформлення та дизайн сайту.</p>
+        </div>
+
+        <div class="card">
+            <h3>JavaScript</h3>
+            <p>Додавання інтерактивності.</p>
+        </div>
+
+    </section>
+
+    <footer id="contacts">
+        © 2026 Мій перший сайт
+    </footer>
+
+    <script>
+        function showMessage() {
+            alert("Привіт! Це JavaScript!");
+        }
+    </script>
+
+</body>
+</html>
